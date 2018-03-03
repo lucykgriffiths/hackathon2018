@@ -2,6 +2,18 @@ body{
 	background-image: url("../assets/main/planetbackground.jpg");
 	background-repeat: no-repeat;
 	background-size: cover;
-h1 {
+}
+h1{
+	font-family: 'Amatic SC', cursive;
+	color: white;
+	font-size: 150px;
+	text-align: center;
+}
+h2 {
     font-family: Cinzel; 
+	color: white;
+	font-size: 20px;
+	text-align: left;
+	position: relative;
+	top:570px;
 }
