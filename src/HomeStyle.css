@@ -7,6 +7,20 @@ h1{
 	font-size: 500%;
 	text-align: center;
 }
+input{
+	font-family: Cinzel bold;
+	text-align:center;
+	padding:5px;
+	background: #fff;
+	border:2px solid #311a3d;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+}
+
+input[type=submit]{
+	padding: 5px 15px;
+	cursor:pointer;
+}
 
 .st-container {
 	background-image: url("../assets/main/starsbackground.jpg");
@@ -146,10 +160,10 @@ h1{
 }
 
 .st-panel h2 {
-	color: #e23a6e;
-	text-shadow: 1px 1px 1px rgba(151,24,64,0.2);
+	color: #fff;
+	text-shadow: 2px 2px 4px rgba(49, 26, 61, 1);
 	position: absolute;
-	font-size: 54px;
+	font-size: 40px;
 	font-weight: 900;
 	width: 80%;
 	left: 10%;
@@ -157,7 +171,7 @@ h1{
 	line-height: 50px;
 	margin: -70px 0 0 0;
 	padding: 0;
-	top: 50%;
+	top: 35%;
 	-webkit-backface-visibility: hidden;
 }
 
