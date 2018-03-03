@@ -7,6 +7,13 @@ h1{
 	font-size: 500%;
 	text-align: center;
 }
+
+h3{
+	font-family: Cinzel;
+	color: white;
+	text-align:center;
+	position: relative;	
+}
 input{
 	font-family: Cinzel bold;
 	text-align:center;
@@ -20,6 +27,13 @@ input{
 input[type=submit]{
 	padding: 5px 15px;
 	cursor:pointer;
+}
+
+.tagline{
+	position: absolute;
+	bottom: 30px;
+	right:10px;
+	color: white;
 }
 
 .st-container {
@@ -143,7 +157,7 @@ input[type=submit]{
 	transform: translateY(-300%);
 }
 #st-control-5:checked ~ .st-scroll {
-	transform: translateY(-300%);
+	transform: translateY(-400%);
 }
 
 [data-icon]:after {
