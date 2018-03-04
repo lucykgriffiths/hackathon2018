@@ -9,21 +9,30 @@
 <body>
 <!--<h1> Event? PlanET </h1>-->
 <div class = "st-container">
-	<input type = "radio" name="radio-set" checked="checked" id="st-control-1"/>
+	<input type = "radio" name="radio-set" onclick="clearfields()" checked="checked" id="st-control-1"/>
 	<a href="#st-panel-1">Home</a>
 	
-	<input type = "radio" name="radio-set" id="st-control-2"/>
+	<input type = "radio" name="radio-set" onclick="clearfields()" id="st-control-2"/>
 	<a href="#st-panel-2">Login</a>
 	
-	<input type = "radio" name="radio-set" id="st-control-3"/>
+	<input type = "radio" name="radio-set" onclick="clearfields()" id="st-control-3"/>
 	<a href="#st-panel-3">Sign Up</a>
 	
-	<input type = "radio" name="radio-set" id="st-control-4"/>
+	<input type = "radio" name="radio-set" onclick="clearfields()" id="st-control-4"/>
 	<a href="#st-panel-4">About Us</a>	
 	
-	<input type = "radio" name="radio-set" id="st-control-5"/>
+	<input type = "radio" name="radio-set" onclick="clearfields()" id="st-control-5"/>
 	<a href="#st-panel-5">Help</a>
 	
+	<script> function clearfields(){
+		var fields_to_clear = ["login_username", "login_password", "signup_username", "signup_password"];
+		fLen = fields_to_clear.length;
+		for(i = 0; i < fLen; i++){
+			var y = document.getElementById(fields_to_clear[i]);
+			y.value = "";
+		}
+	}
+	</script>
 	
 	<div class="st-scroll">
 		<section class = "st-panel st-background" id = "st-panel-1">
@@ -37,10 +46,10 @@
 				<form action="login_page.php" target ="_blank" method="post">
 				<h2>
 					username:<br>
-					<input type="text" name="username">
+					<input type="text" name="username" id="login_username">
 					<br>
 					password:<br>
-					<input type="password" name="password">
+					<input type="password" name="password" id="login_password">
 					<br>
 					<input type="submit" value="LOGIN">
 				</h2>
@@ -49,13 +58,13 @@
 		</section>
 		<section class = "st-panel" id = "st-panel-3">
 			<div class = "st-deco" data-icon = "SignUp"></div>
-			<form action="sign_up_page.php" target ="_blank" method="post">
+			<form action="sign_up_page.php" target ="_blank">
 				<h2>
 					Create a username:<br>
-					<input type="text" name="username">
+					<input type="text" name="username" id="signup_username"/>
 					<br>
 					Create a password:<br>
-					<input type="password" name="password">
+					<input type="password" name="password" id="signup_password">
 					<br>
 					<input type="submit" value="SIGN UP">
 				</h2>
