@@ -49,17 +49,9 @@
 		</section>
 		<section class = "st-panel" id = "st-panel-3">
 			<div class = "st-deco" data-icon = "SignUp"></div>
-			<form action="sign_up_page.php" target ="_blank">
-				<h2>
-					Create a username:<br>
-					<input type="text" name="username" id="signup_username"/>
-					<br>
-					Create a password:<br>
-					<input type="password" name="password" id="signup_password">
-					<br>
-					<input type="submit" value="SIGN UP">
-				</h2>
-				</form>
+                            <?php
+                                include_once "SignUp.php";
+                            ?>
 		</section>
 		<section class = "st-panel" id = "st-panel-4">
 			<div class = "st-deco" data-icon = "AboutUs"></div>
